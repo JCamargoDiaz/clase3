@@ -1,110 +1,163 @@
-/* Estilos generales */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: #f5f5f5;
-    color: #333;
-    padding: 20px;
-  }
-  
-  /* Estilos para la navegación */
-  nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    color: #ff6347; /* Cambia de color al pasar el ratón */
-  }
-  
-  /* Estilos para los encabezados */
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    color: #2c3e50;
-  }
-  
-  h2 {
-    font-size: 2em;
-    color: #34495e;
-  }
-  
-  h3 {
-    font-size: 1.75em;
-    color: #3b5998;
-  }
-  
-  h4 {
-    font-size: 1.5em;
-    color: #e74c3c;
-  }
-  
-  h5 {
-    font-size: 1.25em;
-    color: #27ae60;
-  }
-  
-  h6 {
-    font-size: 1em;
-    color: #8e44ad;
-  }
-  
-  /* Estilos para las imágenes */
-  img {
-    max-width: 100%;
-    height: auto;
-    margin: 15px 0;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  /* Estilos para el texto */
-  p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #555;
-  }
-  
-  /* Estilos para listas */
-  ul, ol {
-    margin: 15px 0;
-    padding-left: 20px;
-  }
-  
-  ul li, ol li {
-    margin-bottom: 8px;
-  }
-  
-  /* Ajustes para dispositivos móviles */
-  @media (max-width: 768px) {
-    nav a {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    h1 {
-      font-size: 2em;
-    }
-  
-    h2 {
-      font-size: 1.5em;
-    }
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+nav {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6347;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+header h2 {
+  font-size: 1.5em;
+  color: #555;
+  margin-top: 10px;
+}
+
+#introduccion {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #444;
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: auto;
+}
+
+#galeria {
+  margin-bottom: 30px;
+}
+
+#galeria h3 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.obra {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.obra h4 {
+  font-size: 1.6em;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.obra img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.obra p {
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.obra ul, .obra ol {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.obra ul li, .obra ol li {
+  margin-bottom: 8px;
+  color: #777;
+}
+
+/* Sección sobre mí */
+#sobre-mi {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+#sobre-mi h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#sobre-mi p {
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+#inicio-sesion {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+#inicio-sesion h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#inicio-sesion p {
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+#inicio-sesion a {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#inicio-sesion a:hover {
+  color: #e74c3c;
+}
+
